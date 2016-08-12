@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Location Region Picker</title>
+
+	<link rel="stylesheet" type="text/css" href="jquery.location-region-picker.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="jquery.location-region-picker.js"></script>
+
+	<script>
+    jQuery(document).ready(function () {
+        $('.location-region-picker').LocationRegionPicker({
+        	'google_api_key' : '',
+        	'types': '(regions)'
+        });
+    });
+	</script>
+
+	<style>
+
+	body {
+		max-width: 960px;
+		margin: 0 auto;
+
+		font-family: -apple-system, BlinkMacSystemFont,
+	    "Segoe UI", "Roboto", "Oxygen",
+	    "Ubuntu", "Cantarell", "Fira Sans",
+	    "Droid Sans", "Helvetica Neue", sans-serif;
+	}
+
+	</style>
+</head>
+<body>
+
+
+	<h1>Region Picker Example</h1>
+
+	<input type="text" class="location-region-picker" />
+
+	<div id="map"></div>
+
+</body>
+</html>
